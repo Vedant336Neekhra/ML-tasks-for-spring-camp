@@ -1,0 +1,15 @@
+Firstly, pre processed the data by handling missing values and scaling it.
+Filled all the missing text values by mode of data and integral data by mean of the data.
+Encoded all the text type data into integral values using label encoder.
+Scaled all the data.
+Applied knn regression and predicted evaluation metrics.
+calculated error percentage in predicted data and root mean squared error.
+reduced error a bit by removing those columns which had too many null values and were irrelevant for price prediction.
+plotted Sale prics vs each feature graphs to understand how each feature is related to our sale price,
+for example sale price is directly increasing on increasing 'OverAllQual' feature.
+similary, features like 'condition 2' does'nt rally affect sale price as we are getting different sale prices on same 'condition2' value.
+calculated correlation matrix which does the same thing as above but instead of visualisation it gives a score between -1 and 1 and describes the relevency of that feature.
+calculated best k for k means by calculating wcss for each k using elbow method.
+applied k-means on top 10 relevent feature and sale price.
+1 st row of the plots shows us the clustered data for sale price vs each feature.
+list of top 10 relevent features - ['OverallQual', 'GrLivArea', 'GarageCars', 'ExterQual', 'GarageArea', 'BsmtQual', 'TotalBsmtSF', '1stFlrSF', 'KitchenQual', 'FullBath']
